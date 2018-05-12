@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="корректировка, параметры, применить, исправление, коррекция, творческий, изображение" />
+	<meta name="description" content="Корректируйте изображения в творческих целях или в целях исправления." />
+	<title>Применение корректировок</title>
+</head>
+
+<body>
+
+	<header>
+		
+
+		<h1>Применение корректировок</h1>
+		<p>Существует целый ряд корректировок, которые можно использовать в творческих целях или в целях исправлений во время работы с композицией и которые добавляются к изображению в виде нового слоя.</p>
+	</header>
+
+	<section class="about">
+
+		<details>
+			<summary>Доступные варианты корректировок</summary>
+			<ul>
+				<li><a href="adjustment_blackAndWhite.html">Черно-белое изображение</a></li>
+				<li><a href="adjustment_brightnessContrast.html">Яркость и контраст</a></li>
+				<li><a href="adjustment_channelMixer.html">Микширование каналов</a></li>
+				<li><a href="adjustment_clrBalance.html">Цветовой баланс</a></li>
+				<li><a href="adjustment_curves.html">Кривые</a></li>
+				<li><a href="adjustment_exposure.html">Экспозиция</a></li>
+				<li><a href="adjustment_gradientMap.html">Градиентная карта</a></li>
+				<li><a href="adjustment_HSL.html">HSL</a></li>
+				<li><a href="adjustment_invert.html">Инвертировать</a></li>
+				<li><a href="adjustment_lensfilter.html">Светофильтр</a></li>
+				<li><a href="adjustment_levels.html">Уровни</a></li>
+				<li><a href="adjustment_3dLut.html">Таблица перекодировки</a></li>
+				<li><a href="adjustment_ocio.html">OCIO (OpenColorIO)</a></li>
+				<li><a href="adjustment_posterize.html">Постеризировать</a></li>
+				<li><a href="adjustment_reclr.html">Изменить цвет</a></li>
+				<li><a href="adjustment_selectiveClr.html">Выборочная цветокоррекция</a></li>
+				<li><a href="adjustment_shadowsHighlights.html">Тени / светлые участки</a></li>
+				<li><a href="adjustment_softProof.html">Цветопроба</a></li>
+				<li><a href="adjustment_splitToning.html">Раздельное тонирование</a></li>
+				<li><a href="adjustment_threshold.html">Пороговое значение</a></li>
+				<li><a href="adjustment_vibrance.html">Красочность</a></li>
+				<li><a href="adjustment_whiteBalance.html">Баланс белого</a></li>
+			</ul>
+		</details>
+
+		<p>Для применения корректировок воспользуйтесь панелью <span class="ui">Слои</span>. Для большинства корректировок предусмотрена возможность использования пользовательских параметров, включая параметры общей коррекции.</p>
+		<p>Корректирующие слои затрагивают только расположенные ниже объекты слоя. Кроме того, корректировку можно применять к дочернему объекту, при этом изменения коснутся только этого объекта.</p>
+		<p>Некоторые корректировки (например, «Кривые», «Уровни» или «Микширование каналов») могут быть выполнены в любом цветовом пространстве, независимо от цветового пространства документа.</p>
+
+	</section>
+
+
+	<section class="settings">
+		<h3>Параметры</h3>
+
+		<p>Общие параметры, которые доступны во всех диалоговых окнах корректировок, описаны ниже.</p>
+		<ul>
+			<li><span class="ui">Удалить</span>: закрытие диалогового окна, удаление корректирующего слоя и отмена корректировок изображения.</li>
+			<li><span class="ui">Объединить</span>: объединение текущего корректирующего слоя и слоя, который расположен сразу после него.</li>
+			<li><span class="ui">Сбросить</span>: сброс всех параметров в диалоговом окне до значений по умолчанию.</li>
+			<li><span class="ui">Непрозрачность</span>: определение степени прозрачности корректирующего слоя.</li>
+			<li><span class="ui">Режим наложения</span>: определение характера взаимодействия пикселей корректирующего слоя и пикселей расположенного ниже слоя. Выберите тип режима во всплывающем меню.</li>
+		</ul>
+
+		<aside class="box note">
+			<p>Специальные диалоговые окна или пользовательские параметры предусмотрены не для всех типов корректировок.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/LayersTabAdustmentIcon.png" class="tool" width="16" height="16" alt="Корректировки" /> Для применения корректировки выполните перечисленные далее действия.</summary>
+			<ol>
+				<li>На панели <span class="ui">Слои</span> выполните одно из перечисленных ниже действий.
+					<ul>
+						<li>Выделите слой, к которому хотите применить корректировку, в качестве дочернего. Корректировка будет применяться ко всем объектам выделенного слоя, исходя из ее положения в стеке слоев.</li>
+						<li>Выделите только тот объект или группу, к которым должна применяться корректировка.</li>
+					</ul>
+				</li>
+				<li>Нажмите <span class="ui">Корректировки</span> и выберите нужный вариант корректировки во всплывающем меню.</li>
+				<li>Если для выбранного типа корректировки появится диалоговое окно, выполните следующие действия.
+					<ol class="nested">
+						<li>Выберите нужные параметры в диалоговом окне.</li>
+						<li>Закройте диалоговое окно.</li>
+					</ol>
+				</li>
+			</ol>
+		</details>
+
+		<aside class="box note">
+			<p>Корректировки также можно делать, воспользовавшись меню <span class="ui">Слой</span> и подменю <span class="ui">Создать корректировку</span>.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="../Layers/adjustmentLayers.html">Использование корректирующих слоев</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

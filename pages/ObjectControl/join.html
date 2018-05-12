@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="комбинация, объединение, пересечение, вычитание, разность, операции, геометрия, булевы, операторы" />
+	<meta name="description" content="Можно соединить объекты с помощью команд «Операции»." />
+	<title>Соединение объектов</title>
+</head>
+
+<body>
+
+
+
+	<header>
+
+
+		<h1>Соединение объектов</h1>
+		<p>Можно соединить объекты для создания безграничного разнообразия фигур с помощью булевых операций.</p>
+	</header>
+
+	<section class="about">
+
+		<h3>Операции соединения</h3>
+
+		<p>Доступные операции приведены далее.</p>
+
+		<p><span class="ui">Добавить</span>: используется для создания нового объекта, получаемого путем объединения выбранных объектов.</p>
+		<figure>
+			<p><img width="180" height="75" alt="Добавление" src="../../../shared/add_illus.png" class="responsive" /></p>
+			<figcaption>Объекты до и после выполнения операции.</figcaption>
+		</figure>
+
+		<p><span class="ui">Вычесть</span>: используется для удаления перекрывающихся участков нижнего объекта. Все остальные выделенные объекты удаляются.</p>
+		<figure>
+			<p><img width="180" height="75" alt="Вычитание" src="../../../shared/subtract_illus.png" class="responsive" /></p>
+			<figcaption>Объекты до и после выполнения операции.</figcaption>
+		</figure>
+
+		<p><span class="ui">Пересечение</span>: используется для создания нового объекта, получаемого из перекрывающихся участков выделенных объектов.</p>
+		<figure>
+			<p><img width="180" height="75" alt="Пересечение" src="../../../shared/intersect_illus.png" class="responsive" /></p>
+			<figcaption>Объекты до и после выполнения операции.</figcaption>
+		</figure>
+
+		<p><span class="ui">Разделить</span>: используется для разделения участков объектов на отдельные объекты; объект, полученный из области пересечения, сохраняет цвет верхнего объекта.</p>
+		<figure>
+			<p><img width="180" height="75" alt="Разделение" src="../../../shared/divide_illus.png" class="responsive" /></p>
+			<figcaption>Объекты до и после выполнения операции.</figcaption>
+		</figure>
+
+		<p><span class="ui">Объединить</span>: используется для объединения выделенных объектов в один составной объект, на котором в прозрачной области перекрываются участки с заливкой.</p>
+		<figure>
+			<p><img width="180" height="75" alt="Объединение" src="../../../shared/combine_illus.png" class="responsive" /></p>
+			<figcaption>Объекты до и после выполнения операции.</figcaption>
+		</figure>
+
+		<aside class="box note">
+			<p>На новых объектах сохраняются свойства нижнего объекта в выделении.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary> <img class="tool" width="18" height="18" alt="Добавить" src="../../../shared/ui/combineadd.png" /> <img class="tool" width="18" height="18" alt="Вычесть" src="../../../shared/ui/combinesubtract.png" /> <img class="tool" width="18" height="18" alt="Пересечение" src="../../../shared/ui/combineintersect.png" /> <img class="tool" width="18" height="18" alt="Разделить" src="../../../shared/ui/combinedivide.png" /> <img class="tool" width="18" height="18" alt="Объединить" src="../../../shared/ui/combine.png" /> Чтобы провести операции соединения, выполните указанные ниже действия.</summary>
+			<ol>
+				<li>Выберите несколько объектов.</li>
+				<li>Выполните одно из перечисленных ниже действий.
+					<ul>
+						<li>На панели инструментов выберите <span class="ui">Добавить</span>, <span class="ui">Вычесть</span>, <span class="ui">Пересечение</span>, <span class="ui">Разделить</span> или <span class="ui">Объединить</span>.</li>
+						<li>В подменю <span class="ui">Геометрия</span> меню <span class="ui">Слой</span> выберите команду операции.</li>
+					</ul>
+				</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>Нажмите и удерживайте <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> при выборе параметра <span class="ui">Добавить</span>, <span class="ui">Вычесть</span>, <span class="ui">Пересечение</span> или <span class="ui">Объединить</span> для <a href="compound.html">создания неразрушающей составной формы</a>.</p>
+			</aside>
+
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="compound.html">Создание составных форм</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

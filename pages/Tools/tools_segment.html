@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="готовый, сегмент, фигура, векторный, инструмент" />
+	<meta name="description" content="Инструмент для рисования фигур «Сегмент» упрощает создание эллипса и предусматривает удаление секции на основании процентного соотношения." />
+	<title>Сегмент</title>
+</head>
+
+<body>
+
+	<header>
+		
+
+		<h1><img src="../../../shared/ui/Shape_Segment.png" class="tool heading" width="18" height="18" alt="Сегмент" /> Сегмент</h1>
+		<p>Инструмент для рисования фигур <span class="ui">Сегмент</span> упрощает создание эллипса и предусматривает удаление секции на основании процентного соотношения.</p>
+	</header>
+
+	<figure>
+		<p><img src="../../../shared/shapes_segment1.png" width="250" height="100" alt="Сегмент по умолчанию" /></p>
+		<figcaption>Фигура и положение маркера по умолчанию (отмечено красным цветом) до настройки.</figcaption>
+	</figure>
+
+	<section class="about">
+		<h2>Настройка</h2>
+		<p>В инструменте «Сегмент» есть несколько вариантов выбора формы и параметров на контекстной панели инструментов, с помощью которых можно удалить часть верхней и нижней секций эллипса на основании процентного соотношения, а также регулировать угол эллипса.</p>
+
+		<figure>
+			<p><img src="../../../shared/shapes_segment2.png" width="250" height="100" alt="Альтернативные варианты сегмента" /></p>
+			<figcaption>Два возможных результата в зависимости от настроенных параметров.</figcaption>
+		</figure>
+	</section>
+
+	<section class="settings">
+		<h3>Параметры</h3>
+
+		<p>На контекстной панели инструментов можно настроить указанные ниже параметры.</p>
+		<ul>
+			<li><span class="ui">Угол</span>: используется для установки начального угла фигуры.</li>
+			<li><span class="ui">Нижняя</span> / <span class="ui">верхняя линия</span>: используется для регулирования положения двух прямых линий фигуры. Таким образом определяется толщина сегмента.</li>
+			<li><span class="ui">Зеркальное отражение</span>: используется для обновления указанных выше параметров и вывода инвертированной (перевернутой) версии текущей фигуры. <figure>
+					<p><img src="../../../shared/shapes_segment_mirror.png" width="150" height="75" alt="Альтернативные варианты полумесяца" /></p>
+				</figure>
+			</li>
+			
+			<li><span class="ui">Негатив</span>: используется для обновления указанных выше параметров и вывода обратной (противоположной) версии текущей фигуры. <figure>
+					<p><img src="../../../shared/shapes_segment_negate.png" width="150" height="75" alt="Альтернативные варианты полумесяца" /></p>
+				</figure>
+			</li>
+			<li><img src="../../../shared/ui/rotationcntr.png" class="tool" width="16" height="16" alt="Показать центр поворота" /> <span class="ui">Показать центр поворота</span>: используется для отображения перемещаемого центра поворота, вокруг которого можно поворачивать фигуру.</li>
+			<li><img src="../../../shared/ui/hideselection.png" class="tool" width="16" height="16" alt="Скрыть выделение" /> <span class="ui">Скрыть выделение</span>: если этот параметр включен, рамка выделения объекта временно скрывается при его трансформации. Если этот параметр выключен, рамка выделения остается видимой при трансформации. Выбранный вариант этого параметра применяется ко всем объектам до тех пор, пока не будет переключен вручную.</li>
+			<li><img src="../../../shared/ui/resetboundingbox.png" class="tool" width="16" height="16" alt="Сбросить рамку выделения" /> <span class="ui">Сбросить рамку выделения</span>: после изменения формы, поворота или наклона фигуры этот параметр используется для сброса рамки выделения в вертикальное положение.</li>
+			<li><img src="../../../shared/ui/converttocurves.png" class="tool" width="16" height="16" alt="Преобразовать в кривые" /> <span class="ui">Преобразовать в кривые</span>: используется для преобразования выделенного объекта в несколько соединенных линий и узлов.</li>
+		</ul>
+		
+		<aside class="box note">
+			<p>Чтобы сбросить настройки положения красного маркера до параметров по умолчанию, просто дважды щелкните маркер.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/about_geometricShapes.html">О геометрических фигурах</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Рисование и редактирование фигур</a></li>
+			<li><a href="tools_ellipse.html">Инструмент «Эллипс»</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

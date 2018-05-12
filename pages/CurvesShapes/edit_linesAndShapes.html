@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="добавить, изменить направление, преобразовать, удалить, управляющие маркеры, редактировать, соединить, линии, узел, узлы, фигура, разделить, кривые, сегменты, контуры" />
+	<meta name="description" content="Редактируйте контур, меняя его кривизну, добавляйте и удаляйте узлы, соединяйте и разбивайте контуры с помощью инструмента «Узел»." />
+	<title>Редактирование векторных кривых и фигур</title>
+</head>
+
+<body>
+	<header>
+
+
+		<h1>Редактирование векторных кривых и фигур</h1>
+
+		<p>Векторные кривые и фигуры можно легко редактировать с помощью одного из приведенных ниже способов.</p>
+		<ul>
+			<li>С помощью <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> при рисовании кривой или фигуры.</li>
+			<li>С помощью <img src="../../../shared/ui/node_tool.png" class="tool" width="18" height="18" alt="Инструмент «Узел»" /> <span class="ui">инструмента «Узел»</span>.<br /> <img src="../../../shared/editline_example.png" class="responsive" width="220" height="150" alt="Пример линии" /></li>
+		</ul>
+		<p>Воспользуйтесь первым способом для точной настройки и регулировки кривой во время рисования, а вторым — при выполнении более продолжительных операций редактирования.</p>
+		</header>
+
+		<section class="howto">
+		<details open="open">
+			<summary>Для редактирования кривых во время рисования выполните перечисленные далее действия.</summary>
+
+			<ul>
+				<li>Нажмите <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> для перемещения узлов и регулирования управляющих маркеров, когда необходима точная настройка кривой.<br /> Кроме того, на панели «Цвет» можно изменить цвет и значение непрозрачности.</li>
+			</ul>
+
+			<aside class="box note">
+				<p>Нажмите и удерживайте <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> и в это время нажимайте другие сегменты для того, чтобы редактировать их таким же образом.</p>
+			</aside>
+
+		</details>
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>Изменение кривизны сегмента</summary>
+			<p>Выполните одно из перечисленных ниже действий.</p>
+			<ul>
+				<li>Выберите узел и перетащите управляющие маркеры.<br />
+					<p><img src="../../../shared/editlines_directionHandles.png" class="screenshot responsive" width="360" height="120" alt="Перетащить управляющие маркеры" /></p></li>
+				<li>Перетащите непосредственно линию для того, чтобы установить ее в нужное положение.<br />
+					<p><img src="../../../shared/editlines_onCurve.png" class="screenshot responsive" width="190" height="120" alt="Перетащить кривую" /></p></li>
+			</ul>
+
+			<aside class="box note">
+				<h3>Клавиши-модификаторы</h3>
+				<p>Далее перечислены клавиши-модификаторы, которые можно использовать для ускорения рабочего процесса с инструментом «Узел».</p>
+				<ul>
+					<li><span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> — используется для ограничения шагов управляющего маркера до интервалов в 45 градусов. В интеллектуальном режиме использование этой функции приводит к установлению ограничений при расположении узла.</li>
+					<li><span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> — используется для изменения типа узла на резкий с целью создания точки перегиба на линии.</li>
+					<li><span class="key SHIFT-TAG"></span>+<span class="key CMD-TAG"></span> — используется для расширения перетаскиваемого управляющего маркера с блокировкой направлений.</li>
+				</ul>
+			</aside>
+
+			<aside class="box tip">
+				<p>Инструмент «Узел» можно использовать в сочетании с возможностями панели <span class="ui">Трансформация</span> для точного позиционирования или масштабирования узлов.</p>
+			</aside>
+		</details>
+
+		<details>
+			<summary>Чтобы добавить узлы, выполните приведенные далее действия.</summary>
+			<ul>
+				<li>Выделите кривую и нажмите точку, в которой необходимо добавить узел.</li>
+			</ul>
+
+		</details>
+
+		<details>
+			<summary>Чтобы удалить узлы, выполните приведенные далее действия.</summary>
+			<ul>
+				<li>Выберите узел и нажмите <span class="key DEL-TAG"></span> <span class="KEY-TAG"></span>.</li>
+			</ul>
+
+		<aside class="box note">
+			<p>Форма кривой автоматически изменится из-за удаления узла. Можно сохранить исходную геометрическую форму кривой, нажав <span class="key ALT-TAG"></span>+<span class="key DEL-TAG"></span> <span class="KEY-TAG"></span>.</p>
+		</aside>
+
+		</details>
+
+		<details>
+			<summary> <img class="tool" alt="Замкнуть кривую" src="../../../shared/ui/Close%20Curve.png" width="16" height="16" /> Чтобы замкнуть кривые, выполните приведенные далее действия.</summary>
+			<p>Выполните одно из перечисленных ниже действий.</p>
+			<ul>
+				<li>Выделите кривую и нажмите <span class="ui">Замкнуть кривую</span> на контекстной панели инструментов.</li>
+				<li>Перетащите конечный узел на начальный и отпустите кнопку, когда изменится указатель.</li>
+			</ul>
+		</details>
+
+		<details>
+			<summary> <img class="tool" alt="Разбить кривую" src="../../../shared/ui/Break%20Curve.png" width="16" height="16" /> Чтобы разбить (разделить) кривые, выполните приведенные далее действия.</summary>
+			<ul>
+				<li>Выберите узел в точке, в которой необходимо разбить кривую и нажмите <span class="ui">Разбить кривую</span> на контекстной панели инструментов.</li>
+			</ul>
+
+		</details>
+
+		<details>
+			<summary> <img class="tool" alt="Соединить кривые" src="../../../shared/ui/Join%20Curves.png" width="16" height="16" /> Чтобы соединить кривые, выполните приведенные далее действия.</summary>
+			<ol>
+				<li>Выбрав инструмент «Узел» (нажмите и удерживайте <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span>, если используется инструмент «Перо»), нажмите и удерживайте <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span>, выбирая обе кривые.</li>
+				<li>На контекстной панели инструментов нажмите <span class="ui">Соединить кривые</span>.</li>
+			</ol>
+		</details>
+
+		<details>
+			<summary> <img class="tool" alt="Обратить кривую" src="../../../shared/ui/reversecurves.png" width="16" height="16" /> Чтобы обратить кривые, выполните приведенные далее действия.</summary>
+			<ul>
+				<li>На контекстной панели инструментов нажмите <span class="ui">Обратить кривую</span>. Начальный узел становится активным. Можно продолжать рисовать с противоположного конца кривой.</li>
+			</ul>
+
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/Sharp%20Corner.png" class="tool" width="16" height="16" alt="Угол резкого узла" /> <img src="../../../shared/ui/Smart%20Corner.png" class="tool" width="16" height="16" alt="Угол интеллектуального узла" /> <img src="../../../shared/ui/Smooth%20Corner.png" class="tool" width="16" height="16" alt="Угол плавного узла" /> Для того чтобы преобразовать тип узла, выполните перечисленные далее действия.</summary>
+			<p>Выполните одно из перечисленных ниже действий.</p>
+			<ul>
+				<li>Выберите узлы, которые необходимо изменить, и нажмите один из типов узлов — <span class="ui">Резкий</span>, <span class="ui">Интеллектуальный</span> или <span class="ui">Плавный</span> — на контекстной панели инструментов.</li>
+				<li>Нажмите и удерживайте <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span>, а затем нажмите узел для того, чтобы преобразовать его в режим <span class="ui">Резкий</span>.</li>
+			</ul>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="draw_linesAndShapes.html">Рисование кривых и фигур</a></li>
+			<li><a href="draw_geometricShapes.html">Рисование и редактирование фигур</a></li>
+			<li><a href="../Tools/tools_node.html">Инструмент «Узел»</a></li>
+		</ul>
+	</section>
+
+
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="перо, инструмент, векторный, линии, фигуры, рисование, прямая линия" />
+	<meta name="description" content="Инструмент «Перо» используется для очень точного рисования кривых и фигур." />
+	<title>Инструмент «Перо»</title>
+</head>
+
+<body>
+	<header>
+		
+
+		<h1><img src="../../../shared/ui/vector_pen_tool.png" class="tool heading" alt="Инструмент «Перо»" width="18" height="18" /> Инструмент «Перо»</h1>
+
+		<p><span class="ui">Инструмент «Перо»</span> используется для точного рисования кривых и фигур.</p>
+	</header>
+
+	<section class="about">
+		<p><img src="../../../shared/pen_example.png" alt="Пример использования инструмента «Перо»" width="400" height="150" /></p>
+
+		<aside class="box tip">
+			<p>Клавиша быстрого доступа к инструменту <span class="KEY-TAG"></span>: <span class="key">P</span></p>
+		</aside>
+
+		<p>В этом инструменте есть четыре режима: <span class="ui">Режим «Перо»</span>, <span class="ui">Интеллектуальный режим</span>, <span class="ui">Режим «Многоугольник»</span> и <span class="ui">Режим «Линия»</span>; их можно выбрать на контекстной панели инструментов. В каждом режиме используется свое начертание линии.</p>
+
+		<h3><img src="../../../shared/ui/penmode.png" class="tool" alt="Режим «Перо»" width="18" height="18" /> Режим «Перо»</h3>
+		<p>Самый эффективный и точный режим, используемый для создания кривых типа «Безье» и фигур с плавными или острыми углами и узлами.</p>
+
+		<h3><img src="../../../shared/ui/smartmode.png" class="tool" alt="Интеллектуальный режим" width="18" height="18" /> Интеллектуальный режим</h3>
+		<p>Легко создавайте плавные кривые и фигуры посредством нажатия мыши и размещения узлов.</p>
+
+		<h3><img src="../../../shared/ui/polygonmode.png" class="tool" alt="Режим «Многоугольник»" width="18" height="18" /> Режим «Многоугольник»</h3>
+		<p>Используется для рисования прямых линий с резкими узлами и фигур с прямыми краями.</p>
+		
+		<h3><img src="../../../shared/ui/linemode.png" class="tool" alt="Режим «Линия»" width="18" height="18" /> Режим «Линия»</h3>
+		<p>Используется для рисования прямых линий, состоящих из одного сегмента.</p>
+		
+		<figure>
+		<p><img src="../../../shared/node_types.png" class="screenshot" alt="Типы узлов" width="555" height="164" /></p>
+		<figcaption>Режимы «Перо», «Интеллектуальный», «Многоугольник» и «Линия»</figcaption>
+		</figure>
+
+	</section>
+
+	<section class="settings">
+		<h3>Параметры</h3>
+
+		<p>На контекстной панели инструментов можно настроить указанные ниже параметры.</p>
+		<ul>
+			<li><span class="ui">Режим</span>: используется для переключения между режимами <span class="ui">Перо</span>, <span class="ui">Интеллектуальный</span>, <span class="ui">Многоугольник</span> и <span class="ui">Линия</span> (см. выше).</li>
+			<li><img src="../../../shared/ui/Sharp%20Corner.png" class="tool" width="16" height="16" alt="Угол резкого узла" /> <img src="../../../shared/ui/Smart%20Corner.png" class="tool" width="16" height="16" alt="Угол интеллектуального узла" /> <img src="../../../shared/ui/Smooth%20Corner.png" class="tool" width="16" height="16" alt="Угол плавного узла" /> <span class="ui">Преобразовать</span>: используется для преобразования выделенного узла в <span class="ui">Резкий</span>, <span class="ui">Плавный</span> или <span class="ui">Интеллектуальный</span> узел.</li>
+			<li><span class="ui">Действие</span>: используется для выполнения операций с кривыми.
+				<ul>
+					<li> <img class="tool" alt="Разбить кривую" src="../../../shared/ui/Break%20Curve.png" width="16" height="16" /> <span class="ui">Разбить кривую</span>: размыкает фигуру в выделенном узле.</li>
+					<li> <img class="tool" alt="Замкнуть кривую" src="../../../shared/ui/Close%20Curve.png" width="16" height="16" /> <span class="ui">Замкнуть кривую</span>: соединяет начальный и конечный узлы для создания замкнутой фигуры.</li>
+					<li> <img class="tool" alt="Сгладить кривую" src="../../../shared/ui/Smooth%20Curve.png" width="16" height="16" /> <span class="ui">Сгладить кривую</span>: изменяет линию или фигуру, добавляя или удаляя узлы, для придания более эстетичного вида.</li>
+					<li> <img class="tool" alt="Соединить кривые" src="../../../shared/ui/Join%20Curves.png" width="16" height="16" /> <span class="ui">Соединить кривые</span>: соединяет две отдельные кривые друг с другом для создания одной кривой. Обе кривые необходимо выделить с помощью <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> и инструмента «Узел» или <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> по мере рисования.</li>
+					<li> <img class="tool" alt="Обратить кривую" src="../../../shared/ui/reversecurves.png" width="16" height="16" /> <span class="ui">Обратить кривую</span>: позволяет рисовать с противоположного конца кривой. Начальный узел становится активным, и можно продолжать рисовать.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Привязать</span>: используется для регулирования привязки узлов.
+				<ul>
+					<li> <img class="tool" alt="Выровнять по узлам выделенных кривых" src="../../../shared/ui/snap_selected_curves.png" width="16" height="16" /> <span class="ui">Выровнять по узлам выделенных кривых</span>: используется для привязки любого перетаскиваемого узла к любому другому узлу на той же или другой кривой.</li>
+					<li> <img class="tool" alt="Привязать к геометрии выделенных кривых" src="../../../shared/ui/SnapSelectedGeometry.png" width="16" height="16" /> <span class="ui">Привязать к геометрии выделенных кривых</span>: используется для привязки перетащенных узлов к тому же или другому контуру или узлу кривой.</li>
+					<li> <img class="tool" alt="Привязать все выделенные узлы при перетягивании" src="../../../shared/ui/snap_all_nodes.png" width="16" height="16" /> <span class="ui">Привязать все выделенные узлы при перетягивании</span>: используется для привязки нескольких выделенных узлов при перетягивании к целевому узлу на любой выделенной кривой.</li>
+					<li> <img class="tool" alt="Привязать маркеры, расположенные вне кривых" src="../../../shared/ui/snap_anchor_curves.png" width="16" height="16" /> <span class="ui">Привязать маркеры, расположенные вне кривых</span>: используется для выравнивания перетянутого управляющего маркера с прилегающим узлом.</li>
+				</ul>
+				<p>Эти параметры совершенно не зависят от глобальных параметров <a href="../DesignAids/snapping.html">привязки</a>.</p>
+			</li>
+			<li><span class="ui">Использовать заливку</span>: если этот параметр включен, вогнутый участок линии заполняется по мере рисования текущим цветом заливки (установленным на панели «Цвет»).</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/draw_linesAndShapes.html">Рисование кривых и фигур</a></li>
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Редактирование кривых и фигур</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>
+

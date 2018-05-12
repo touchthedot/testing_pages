@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="заливка, инструмент, векторный, градиент" />
+	<meta name="description" content="Инструмент «Заливка» позволяет настроить цвета заливки и линий, применяемые для векторных и текстовых объектов." />
+	<title>Инструмент «Заливка»</title>
+</head>
+
+<body>
+
+	<header>
+		
+
+		<h1><img class="tool heading" width="18" height="18" alt="Инструмент «Заливка»" src="../../../shared/ui/gradient_tool.png" /> Инструмент «Заливка»</h1>
+	
+		<p><span class="ui">Инструмент «Заливка»</span> позволяет настроить цвета заливки и линий, применяемые для векторных и текстовых объектов.</p>
+	
+	</header>
+
+	<section class="about">
+		<p>Хотя инструмент «Заливка» можно использовать для применения сплошного цвета к заливке или обводке объекта, однако его истинная сила заключается в возможности применять и изменять градиенты.</p>
+
+		<aside class="box note">
+			<p>Можно также применить градиент к растровым слоям, корректировочным слоям и маскам слоя, воспользовавшись инструментом «Заливка».</p>
+		</aside>
+
+	</section>
+	
+	<section class="settings">
+		<h3>Параметры</h3>
+
+		<p>На контекстной панели инструментов можно настроить указанные ниже параметры.</p>
+		<ul>
+			<li><span class="ui">Контекст</span>: используется для корректировки цвета <span class="ui">заливки</span> или <span class="ui">обводки</span> выбранного объекта.</li>
+			<li><span class="ui">Тип</span>: используется для преобразования типа цвета объекта. Например, тип <span class="ui">Нет</span> можно изменить на тип <span class="ui">Линейный</span>.</li>
+			<li>Выделяйте, выбирайте и изменяйте сплошной или градиентный цвет объекта. Для этого необходимо нажать на образец цвета, чтобы отобразилась всплывающая панель. Дополнительную информацию о доступных параметрах см. в темах <a href="../Panels/clrPanel.html">Панель «Цвет»</a>, <a href="../Panels/swatchesPanel.html">Панель «Образцы»</a> и <a href="../Clr/gradientEditor.html">Редактирование градиента</a>.</li>
+			<li><img class="tool heading" width="16" height="16" alt="Повернуть градиент" src="../../../shared/ui/fill_rotate_gradient.png" /> <span class="ui">Повернуть градиент</span>: используется для поворота примененного градиента на 90°.</li>
+			<li><img class="tool heading" width="16" height="16" alt="Обратный градиент" src="../../../shared/ui/fill_reverse_gradient.png" /> <span class="ui">Обратный градиент</span>: конечные узлы меняются местами. (Все промежуточные узлы также меняют свое положение соответственно.)</li>
+			<li><img class="tool heading" width="16" height="16" alt="Сохранить коэффициент заливки" src="../../../shared/ui/lock_aspect_ratio.png" /> <span class="ui">Сохранить коэффициент заливки</span>: если этот параметр выключен (по умолчанию), можно изменять положение конечных узлов в индивидуальном порядке, что приводит к изменению коэффициента заливки. Если этот параметр включен, конечные узлы фиксируются, обеспечивая сохранение коэффициента заливки (т. е. при изменении положения одного узла автоматически обновится другой). Этот параметр оказывает воздействие только на <span class="ui">эллиптическую</span> и <span class="ui">растровую</span> заливки.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="tools_transparency.html">Инструмент «Прозрачность»</a></li>
+			<li><a href="../Clr/selectingClr.html">Выбор цвета</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

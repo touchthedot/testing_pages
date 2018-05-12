@@ -1,0 +1,108 @@
+.uitoolbar_message.persona:after {
+	content: "Панель инструментов «Режимы»";
+}
+
+.uitoolbar_message.rawinfo:after {
+	content: "Панель инструментов";
+}
+
+.uitoolbar_message.phototoolbar:after {
+	content: "Панель инструментов";
+}
+
+.uitoolbar_message.photocontext:after {
+	content: "Контекстная панель инструментов";
+}
+
+.uitoolbar_message.toolsphoto:after {
+	content: "Панель «Инструменты»";
+}
+
+.uitoolbar_message.liquifytoolbar:after {
+	content: "Панель инструментов";
+}
+
+.uitoolbar_message.toolsliquify:after {
+	content: "Панель «Инструменты»";
+}
+
+.uitoolbar_message.drawtoolbar:after {
+	content: "Панель инструментов";
+}
+
+.uitoolbar_message.pixeltoolbar:after {
+	content: "Панель инструментов";
+}
+
+.uitoolbar_message.exporttoolbar:after {
+	content: "Панель инструментов";
+}
+
+.uitoolbar_message.toolsraw:after {
+	content: "Панель «Инструменты»";
+}
+
+.uitoolbar_message.toolsdraw:after {
+	content: "Панель «Инструменты»";
+}
+
+.uitoolbar_message.toolspixel:after {
+	content: "Панель «Инструменты»";
+}
+
+.uitoolbar_message.toolsexport:after {
+	content: "Панель «Инструменты»";
+}
+
+.uitoolbar_message.tonemappingtoolbar:after {
+	content: "Панель инструментов";
+}
+
+.uitoolbar_message.toolstonemapping:after {
+	content: "Панель «Инструменты»";
+}
+
+.uitoolbar_message.panels:after {
+	content: "Панели";
+}
+
+.uitoolbar_message.status:after {
+	content: "Строка состояния";
+}
+
+.uitoolbar_message.slices:after {
+	content: "Фрагменты для экспорта";
+}
+
+.uitoolbar_message.slices2:after {
+	content: "Фрагменты для экспорта";
+}
+
+.SPACEBAR-TAG:after{
+	content:"Пробел";
+}
+.KEY-TAG:after{
+	content:"клавиша";
+}
+
+/* This gets changed to display: none for translation branches */
+.nft {
+	display: none
+}
+
+/* Test class to see what a topic looks like without content not for translation */
+.nfttest {
+	display: none;
+}
+
+/* For Translation only. When branching to translated builds delete display: none; in here */
+.ft {
+}
+
+.comparison:before {
+	content: "После (щелкните или коснитесь)";
+}
+
+.comparison.viewable_text:before {
+	content: "До";
+}

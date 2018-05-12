@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="преобразование в кривые" />
+	<meta name="description" content="Преобразовывайте почти любые объекты в линейные сегменты и узлы для создания пользовательских фигур с безграничными возможностями редактирования." />
+	<title>Преобразование объектов в кривые</title>
+</head>
+
+<body>
+
+	<header>
+
+
+		<h1>Преобразование объектов в кривые</h1>
+
+		<p>Можно создавать новые формы, преобразовывая геометрические фигуры (созданные с помощью инструментов для рисования фигур) в кривые и корректируя узлы итоговой фигуры.</p>
+
+		<figure>
+			<p><img src="../../../shared/converttocurves.png" class="responsive" width="296" height="160" alt="Преобразование в кривые на практике" /></p>
+			<figcaption>Скругленный прямоугольник преобразован в кривые для изменения горизонтальных краев.</figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+		<p>Операция <span class="term">Преобразовать в кривые</span> не ограничена геометрическими фигурами. В кривые можно преобразовывать почти любые объекты, в том числе текст.</p>
+		<figure>
+			<p><img src="../../../shared/converttocurves_text.png" width="308" height="68" alt="Преобразование текста в кривые на практике" /></p>
+			<figcaption>Текст преобразован в кривые, а затем удалены узлы для изменения овала, внутрибуквенного просвета и степени открытости букв.</figcaption>
+		</figure>
+
+		<aside class="box warning">
+			<p>После преобразования объекта в кривые их редактирование общепринятым образом становится невозможным. Например, вы не сможете изменить шрифт текста после его преобразования в кривые.</p>
+		</aside>
+
+		<aside class="box tip">
+			<p>Кроме того, можно создавать новые фигуры посредством соединения двух и более объектов множеством способов. Дополнительную информацию см. в теме <a href="join.html">Соединение объектов</a>.</p>
+		</aside>
+
+	</section>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Инструмент «Перемещение»" /> <img src="../../../shared/ui/node_tool.png" class="tool" width="18" height="18" alt="Инструмент «Узел»" /> Чтобы преобразовать фигуру в кривые, выполните указанные ниже действия.</summary>
+			<ol>
+				<li>Выберите фигуру с помощью инструмента <span class="ui">Перемещение</span> или <span class="ui">Узел</span>.</li>
+				<li>Выполните одно из перечисленных ниже действий.
+					<ul>
+						<li>На контекстной панели инструментов нажмите <span class="ui">Преобразовать в кривые</span>.</li>
+						<li>В меню <span class="ui">Слой</span> выберите <span class="ui">Преобразовать в кривые</span>.</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Теперь фигура состоит из кривых. <span class="ui">Инструмент «Узел»</span> выбирается автоматически. Сегменты и узлы можно изменять с помощью инструмента «Узел».</p>
+		</details>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Рисование и редактирование фигур</a></li>
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Редактирование кривых и фигур</a></li>
+			<li><a href="join.html">Соединение объектов</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

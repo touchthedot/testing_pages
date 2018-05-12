@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="упорядочение объектов" />
+	<meta name="description" content="Положение всех объектов в z-последовательности слоя можно изменять, чтобы определять, какие части композиции будут отображаться при перекрытии объектов." />
+	<title>Упорядочение объектов</title>
+</head>
+
+<body>
+
+
+
+	<header>
+
+
+		<h1>Упорядочение объектов</h1>
+		<p>Каждый объект на странице занимает определенное положение в z-последовательности этого проекта (порядок элементов в стеке). В случае перекрывающихся объектов с помощью этой функции можно задать, какие части объекта остаются видимыми, а какие — скрытыми.</p>
+	</header>
+
+	<section class="about">
+
+		<p>Каждому нарисованному или вставленному объекту присваивается определенное положение в z-последовательности текущего выбранного слоя. Исходное положение объекта определяется с помощью функции нацеливания. Однако при необходимости положение всех объектов в z-последовательности слоя можно изменять.</p>
+		<figure>
+			<p><img src="../../../shared/order.png" class="screenshot responsive" width="480" height="224" alt="Пример выравнивания" /></p>
+			<figcaption>До и после изменения положения в z-последовательности.</figcaption>
+		</figure>
+	</section>
+
+
+	<section class="howto">
+		<details open="open">
+			<summary> <img class="tool" width="18" height="18" alt="Переместить на задний план" src="../../../shared/ui/move_to_back.png" /> <img class="tool" width="18" height="18" alt="На 1 позицию назад" src="../../../shared/ui/back_one.png" /> <img class="tool" width="18" height="18" alt="На 1 позицию вперед" src="../../../shared/ui/forward_one.png" /> <img class="tool" width="18" height="18" alt="Переместить на передний план" src="../../../shared/ui/move_to_front.png" /> Для изменения положения объекта в z-последовательности выполните одно из указанных ниже действий.</summary>
+			<ol>
+				<li>Выделите один или несколько объектов.</li>
+				<li>На панели инструментов выберите один из перечисленных ниже вариантов.
+					<ul>
+						<li><span class="ui">Переместить на задний план</span>: используется для перемещения выделенных объектов в нижнюю часть слоя.</li>
+						<li><span class="ui">На 1 позицию назад</span>: используется для перемещения выделенных объектов на одну позицию вниз в слое.</li>
+						<li><span class="ui">На 1 позицию вперед</span>: используется для перемещения выделенных объектов на одну позицию вверх в слое.</li>
+						<li><span class="ui">Переместить на передний план</span>: используется для перемещения выделенных объектов сверху слоя.</li>
+
+					</ul>
+					<aside class="box note">
+						<p>Описанные выше параметры также доступны в подменю <span class="ui">Упорядочить</span> в меню <span class="ui">Слой</span>.</p>
+					</aside>
+				</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>Можно также менять положение объектов или вкладывать их друг в друга с помощью панели <span class="ui">Слои</span>.</p>
+			</aside>
+
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="target.html">Нацеливание объектов</a></li>
+			<li><a href="../Layers/manageLayers.html">Упорядочивание слоев / управление слоями</a></li>
+			<li><a href="../Panels/layersPanel.html">Панель «Слои»</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

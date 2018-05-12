@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="ocio, управляемый, рабочий процесс, hdr, openexr, число с плавающей запятой, неограниченный, 32-битный" />
+	<meta name="description" content="Используйте OCIO для рабочих процессов по управлению цветами." />
+	<title>Использование OpenColorIO</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Использование OpenColorIO</h1>
+
+		<p>Дополнительно к поддержке редактирования 32-битных изображений Affinity Designer также поддерживает OpenColorIO — систему управления цветом, благодаря которой можно обеспечить рабочий процесс с полным управлением цветами. Она используется преимущественно для производства кинофильмов, но может быть использована в любой ситуации, когда требуется точное управление цветами от начала до конца.</p>
+	</header>
+
+	<section class="howto">
+		<h2>Настройка OpenColorIO</h2>
+		<p>По умолчанию функции OpenColorIO в Designer недоступны для немедленного использования. Для этого требуется файл конфигурации <span class="ui">.ocio</span> вместе с некоторыми вспомогательными файлами, например таблицами перекодировки.</p>
+		<p>На веб-сайте OpenColorIO (http://www.opencolorio.org) представлены некоторые образцы конфигурации с целым рядом подходящих профилей ввода и вывода, в том числе несколько конфигураций Academy Colour (ACES).</p>
+		<details open="open">
+			<summary>Чтобы настроить конфигурацию OpenColorIO, выполните приведенные далее действия.</summary>
+			<ol>
+				<li>Загрузите и извлеките выбранную конфигурацию OpenColorIO в папку.</li>
+				<li class="osx">В меню <span class="ui">Affinity Designer</span> выберите <span class="ui">Установки</span>.</li>
+				<li class="win32">В меню <span class="ui">Правка</span> выберите пункт <span class="ui">Установки</span>.</li>
+				<li>На панели <span class="ui">Цвет</span> в пункте <span class="ui">Файл конфигурации OpenColorIO</span> нажмите <span class="ui">Выбрать</span> и перейдите к каталогу с извлеченной конфигурацией. Выберите файл конфигурации <span class="ui">.ocio</span>.</li>
+				<li>В пункте <span class="ui">Папка поиска OpenColorIO</span> нажмите <span class="ui">Выбрать</span> и выберите каталог с извлеченной конфигурацией (должен отобразиться уже выделенный каталог, из которого был выбран файл конфигурации <span class="ui">.ocio</span>).</li>
+				<li>Отобразится запрос на перезагрузку программы, необходимую для вступления параметров OpenColorIO в силу.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section class="howto">
+		<h2>Использование OpenColorIO</h2>
+		<p>Отображение функции OpenColorIO можно включить двумя способами.</p>
+		<ul>
+			<li>На панели <span class="ui">32-битный просмотр</span> содержится параметр <span class="ui">Трансформация отображения</span>, который становится доступным только при наличии действительной конфигурации OpenColorIO. Его можно использовать для обеспечения неразрушающего рабочего процесса управления цветами. Дополнительную информацию см. в разделе <a href="../Panels/32bitPanel.html">32-битный просмотр</a>.</li>
+			<li>Можно добавить корректирующий слой <span class="ui">OCIO</span> (см. <a href="../Adjustments/adjustment_ocio.html">Корректировка OCIO</a>), чтобы без потерь преобразовывать цветовые пространства. В документе можно создать несколько корректирующих слоев <span class="ui">OCIO</span>, что обеспечивает возможность размещать составные слои из разных цветовых пространств. Пример стека слоев (в иерархическом порядке) приведен далее.
+				<ul>
+					<li><span class="ui">Корректировка OCIO</span> — из <span class="ui"><i>Утилита — линейное — sRGB</i></span> обратно в <span class="ui"><i>Роль — scene_linear</i></span></li>
+					<li><span class="ui">Пиксельный слой sRGB — составной элемент.</span></li>
+					<li><span class="ui">Корректировка OCIO</span> — из <span class="ui"><i>Роль — scene_linear</i></span> в <span class="ui"><i>Утилита — линейное — sRGB</i></span></li>
+					<li><span class="ui">Пиксельный слой</span> — исходный слой.</li>
+				</ul>
+			</li>
+		</ul>
+
+		<figure class="nft">
+			<p><img src="../../images/adjustment_ocio.png" class="responsive" width="380" alt="Корректировка OCIO" /></p>
+			<figcaption>Переход слоя корректировки OCIO из <span class="ui">Роль — scene_linear</span> в <span class="ui">Утилита — линейное — sRGB</span>.</figcaption>
+		</figure>
+
+		<aside class="box note">
+			<p>При загрузке документов OpenEXR Designer всегда преобразовывает исходное цветовое пространство в <span class="ui">scene_linear</span>. При наличии действительной конфигурации OpenColorIO Designer также отобразит сообщение о том, какой цветовой профиль был преобразован. Обычно это можно определить по аффиксу имени файла, например <span class="ui">render_acescg.exr</span>.</p>
+		</aside>
+	</section>
+
+	<section id="also">
+		<h4>ТАКЖЕ СМ.:</h4>
+		<ul class="plain">
+			<li><a href="../Panels/32bitPanel.html">32-битный просмотр</a></li>
+			<li><a href="../Adjustments/adjustment_ocio.html">Корректировка OCIO</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>
